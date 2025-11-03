@@ -1,0 +1,10 @@
+3,Jagdish,9874563210,Katraj,jersey,2,1000,offline,not paid,not delivered
+4,Jagdish,9874563210,Katraj,jersey,2,1000,offline,not paid,not delivered
+5,Jagdish,9874563210,Katraj,jersey,2,1000,offline,not paid,not delivered
+6,Jagdish,9874563210,Katraj,jersey,2,1000,offline,not paid,not delivered
+7,Rohit,8203065790,Baner,stockings,5,750,offline,not paid,not delivered
+8,Vinod,0123654789,sus,stockings,3,450,offline,not paid,not delivered
+9,Vinod,0123654789,sus,stockings,3,450,offline,not paid,not delivered
+10,Vinod,0123654789,sus,stockings,3,450,offline,not paid,not delivered
+11,Deevakar,0123654789,Sanghavi,football,3,2400,offline,not paid,not delivered
+12,Raj,0123456756,Sanghvi,football,4,3200,offline,not paid,not delivered

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Login Page with Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+   /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+    }
+
+    /* Organization Logo */
+    .navbar-brand img {
+      height: 60px; /* Increased height for bigger logo */
+      width: auto;
+    }
+
+    /* Navbar Links */
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1em; /* Larger font for bold effect */
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff7f50;
+    }
+
+    /* Dropdown Item Styling */
+    .dropdown-item {
+      font-weight: bold;
+    }
+
+    .dropdown-item:hover {
+      background-color: #ff7f50;
+      color: #fff;
+    }
+
+    /* Social Icon Styling */
+    .social-icon {
+      color: #fff;
+      margin-left: 10px;
+      font-size: 1.3em; /* Slightly larger icons */
+      transition: color 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #ff7f50;
+    }
+
+
+    .card {
+      border-radius: 15px;
+      background: #1e1e1e;
+      color: #fff;
+    }
+
+    .card h3 {
+      font-weight: bold;
+      color: #6e8efb;
+    }
+
+    .form-control {
+      background: #333;
+      border: 1px solid #444;
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: #bbb;
+    }
+
+    .btn-primary {
+      background: #6e8efb;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #a777e3;
+    }
+
+	/* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 0.9em;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="resources/ISA.jpg" alt="Organization Logo"> <!-- Organization Logo -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+     <div>
+        <Label style="color: #f8f9fa; text-align: center; font-weight: bolder; font-size: larger;">Invictus Sports Academy</Label>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Home Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!-- Dropdown for Login Pages -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="loginDropdown">
+            <a class="dropdown-item" href="StudentLogin.html">Student Login</a>
+            <a class="dropdown-item" href="CoachLogin.html">Teacher Login</a>
+            <a class="dropdown-item" href="AdminLogin.html">Admin Login</a>
+          </div>
+        </li>
+        <!-- About Us Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <!-- Social Media Icons -->
+        <li class="nav-item">
+          <a class="nav-link social-icon" href="https://instagram.com/organization" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link social-icon" href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <!-- Contact Email -->
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:contact@organization.com">contact@organization.com</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Card Section -->
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+      <h3 class="text-center mb-4">Coach Login</h3>
+      <form action="./CoachPage" method="post">
+        <div class="mb-3">
+          <label for="userId" class="form-label">User ID</label>
+          <input name="user" type="text" class="form-control" id="userId" placeholder="Enter your ID" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+      <div class="text-center mt-3">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer Section -->
+  <footer>
+    &copy; 2024 All Rights Reserved by Organization Name.
+  </footer>
+
+  <!-- Bootstrap JS, jQuery, and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
